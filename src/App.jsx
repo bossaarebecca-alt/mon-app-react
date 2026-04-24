@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 import Accueil from './pages/Accueil'
 import TodoList from './pages/TodoList'
 import APropos from './pages/APropos'
+import Blagues from './pages/Blagues'
 
 function Navbar() {
   return (
@@ -14,6 +15,7 @@ function Navbar() {
         <Link to="/" style={{ color: 'white', textDecoration: 'none' }}>Accueil</Link>
         <Link to="/todo" style={{ color: 'white', textDecoration: 'none' }}>Todo List</Link>
         <Link to="/apropos" style={{ color: 'white', textDecoration: 'none' }}>À propos</Link>
+        <Link to="/blagues" style={{ color: 'white', textDecoration: 'none' }}>Blagues</Link>
       </div>
     </nav>
   )
@@ -28,6 +30,7 @@ function App() {
           <Route path="/" element={<Accueil />} />
           <Route path="/todo" element={<TodoList />} />
           <Route path="/apropos" element={<APropos />} />
+          <Route path="/blagues" element={<Blagues />} />
         </Routes>
       </div>
     </BrowserRouter>
