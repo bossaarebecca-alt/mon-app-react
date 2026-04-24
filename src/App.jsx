@@ -3,6 +3,7 @@ import Accueil from './pages/Accueil'
 import TodoList from './pages/TodoList'
 import APropos from './pages/APropos'
 import Blagues from './pages/Blagues'
+import Meteo from './pages/Meteo'
 
 function Navbar() {
   return (
@@ -16,6 +17,7 @@ function Navbar() {
         <Link to="/todo" style={{ color: 'white', textDecoration: 'none' }}>Todo List</Link>
         <Link to="/apropos" style={{ color: 'white', textDecoration: 'none' }}>À propos</Link>
         <Link to="/blagues" style={{ color: 'white', textDecoration: 'none' }}>Blagues</Link>
+        <Link to="/meteo" style={{ color: 'white', textDecoration: 'none' }}>Météo</Link>
       </div>
     </nav>
   )
@@ -31,6 +33,7 @@ function App() {
           <Route path="/todo" element={<TodoList />} />
           <Route path="/apropos" element={<APropos />} />
           <Route path="/blagues" element={<Blagues />} />
+          <Route path="/meteo" element={<Meteo />} />
         </Routes>
       </div>
     </BrowserRouter>
